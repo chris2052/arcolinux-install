@@ -3,6 +3,8 @@
 # Define packages to install
 packages=(
     kitty
+    firefox
+    microsoft-edge-beta
     zathura
     ranger-fm
     notepadqq
@@ -13,25 +15,25 @@ packages=(
     obsidian
     homebank
     portfolio-performance
-  	chatgpt
-	  anki
-  	zotero
-  	flameshot
-  	keepassxc
-  	meld
-  	nextcloud
-  	vlc-player
-  	sublime-text
-  	qalculate
-  	MuseScore
-  	f.lux
-  	latex-ocr
-  	Cascadia Code (Font)
-  	CaskaydiaCove (Nerd Font)
-  	Discord
-  	NormCap
-  	Apple Emoji
-  	NerdDictation
+    chatgpt
+    anki
+    zotero
+    flameshot
+    keepassxc
+    meld
+    nextcloud-client
+    vlc-player
+    sublime-text
+    qalculate
+    musescore
+    f.lux
+    latex-ocr
+    Cascadia Code
+    CaskaydiaCove
+    Discord
+    NormCap
+    Apple Emoji
+    NerdDictation
 )
 
 
