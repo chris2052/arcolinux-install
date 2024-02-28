@@ -34,6 +34,13 @@ packages=(
     NormCap
     Apple Emoji
     NerdDictation
+    peek
+    freecad
+    librecad
+    libreoffice-still
+    blender
+    thunderbird
+    spotify
 )
 
 
