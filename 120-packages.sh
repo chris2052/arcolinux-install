@@ -4,36 +4,34 @@
 packages=(
     kitty
     firefox
-    microsoft-edge-beta
+    #microsoft-edge-beta-bin
     zathura
-    ranger-fm
-    notepadqq
+    ranger
+    visual-studio-code-bin
     gimp
     brave-browser
     inkscape
-    vscode
     obsidian
     homebank
-    portfolio-performance
-    chatgpt
-    anki
-    zotero
+    #portfolio-performance-bin
+    #chatgpt
+    #anki-bin
+    #zotero-bin
     flameshot
     keepassxc
     meld
     nextcloud-client
-    vlc-player
+    vlc
     sublime-text
-    qalculate
+    qalculate-gtk
     musescore
-    f.lux
-    latex-ocr
-    Cascadia Code
-    CaskaydiaCove
-    Discord
-    NormCap
-    Apple Emoji
-    NerdDictation
+    #latex-ocr
+    ttf-cascadia-code
+    ttf-cascadia-code-nerd
+    discord
+    #normcap
+    ttf-apple-emoji
+    #nerd-dictation-git
     peek
     freecad
     librecad
@@ -41,13 +39,18 @@ packages=(
     blender
     thunderbird
     spotify
+    arduino
 )
-
+# commented packages are not in the default repos, but in AUR
 
 # Update package repositories
 sudo pacman -Sy
 
 # Install packages
 for package in "${packages[@]}"; do
-    sudo pacman -S --noconfirm "$package"
+    if ! pacman -Qs "$package" >/dev/null; then
+        sudo pacman -S --noconfirm "$package"
+    else
+        echo "$package is already installed. Skipping..."
+    fi
 done
