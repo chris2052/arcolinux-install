@@ -8,7 +8,7 @@ packages=(
     anki-bin
     zotero-bin
     vlc
-    #latex-ocr
+    #latex-ocr (not as package available)
     normcap
     #nerd-dictation-git
 	appflowy-bin
